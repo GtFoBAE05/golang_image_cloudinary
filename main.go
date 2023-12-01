@@ -12,7 +12,7 @@ func main() {
 		c.JSON(200, "Hello, World!")
 	})
 
-	router.POST("/upload", controllers.UploadImage)
+	router.POST("/upload", controllers.UploadToCloudinary)
 	router.GET("/image", controllers.GetUploadImage)
 
 	router.Run()
